@@ -1,0 +1,325 @@
+{\rtf1\mac\ansicpg10000\cocoartf824\cocoasubrtf410
+{\fonttbl\f0\froman\fcharset77 TimesNewRomanPS-BoldMT;\f1\fswiss\fcharset77 Arial-BoldMT;\f2\froman\fcharset77 TimesNewRomanPSMT;
+\f3\froman\fcharset77 Times-Roman;\f4\fswiss\fcharset77 Helvetica;\f5\fswiss\fcharset77 Arial-BoldItalicMT;
+\f6\froman\fcharset77 Times-Bold;\f7\fswiss\fcharset77 Helvetica-Bold;\f8\froman\fcharset77 Times-Italic;
+\f9\fnil\fcharset102 STXihei;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue240;\red0\green0\blue255;}
+{\info
+{\title ADAM}}\vieww20160\viewh15340\viewkind0
+\deftab720
+\pard\pardeftab720\sa80\qj
+
+\f0\b\fs28 \cf0 ADAM: Agent-based Demand and Assignment Model 1.0--Help File
+\f1\fs42\fsmilli21333 \
+\pard\pardeftab720\sl160\sa240
+{\field{\*\fldinst{HYPERLINK "file:///Users/shanjiangzhu/Documents/workspace/ADAM3.0/ADAM-helpfile.htm#Introduction"}}{\fldrslt 
+\f2\b0\fs32 \cf2 \ul \ulc2 Introduction}}
+\f3\b0\fs24 \
+\pard\pardeftab720\sl120\sa240
+{\field{\*\fldinst{HYPERLINK "file:///Users/shanjiangzhu/Documents/workspace/ADAM3.0/ADAM-helpfile.htm#Model_Details:"}}{\fldrslt 
+\f2 \cf2 \ul \ulc2 Model Details}}\
+\pard\pardeftab720\sl160\sa240
+{\field{\*\fldinst{HYPERLINK "file:///Users/shanjiangzhu/Documents/workspace/ADAM3.0/ADAM-helpfile.htm#Instructions"}}{\fldrslt 
+\f2\fs32 \cf2 \ul \ulc2 Instructions}}\
+\pard\pardeftab720\sl160\sa240
+
+\f2\fs32 \cf3 \'ca\'ca\'ca {\field{\*\fldinst{HYPERLINK "file:///Users/shanjiangzhu/Documents/workspace/ADAM3.0/ADAM-helpfile.htm#Choose_network"}}{\fldrslt \cf2 \ul \ulc2 Choose network}}
+\f3\fs24 \cf0 \
+
+\f2\fs32 \cf3 \'ca\'ca\'ca {\field{\*\fldinst{HYPERLINK "file:///Users/shanjiangzhu/Documents/workspace/ADAM3.0/ADAM-helpfile.htm#Map_editing"}}{\fldrslt \cf2 \ul \ulc2 Map editing}}
+\f3\fs24 \cf0 \
+
+\f2\fs32 \cf3 \'ca\'ca\'ca {\field{\*\fldinst{HYPERLINK "file:///Users/shanjiangzhu/Documents/workspace/ADAM3.0/ADAM-helpfile.htm#Property_inspection_"}}{\fldrslt \cf2 \ul \ulc2 Property inspection}}
+\f3\fs24 \cf0 \
+
+\f2\fs32 \cf3 \'ca\'ca\'ca {\field{\*\fldinst{HYPERLINK "file:///Users/shanjiangzhu/Documents/workspace/ADAM3.0/ADAM-helpfile.htm#Set_global_variables"}}{\fldrslt \cf2 \ul \ulc2 Set global variables}}
+\f3\fs24 \cf0 \
+
+\f2\fs32 \cf3 \'ca\'ca\'ca {\field{\*\fldinst{HYPERLINK "file:///Users/shanjiangzhu/Documents/workspace/ADAM3.0/ADAM-helpfile.htm#Save_network"}}{\fldrslt \cf2 \ul \ulc2 Save network}}
+\f3\fs24 \cf0 \
+
+\f2\fs32 \cf3 \'ca\'ca\'ca {\field{\*\fldinst{HYPERLINK "file:///Users/shanjiangzhu/Documents/workspace/ADAM3.0/ADAM-helpfile.htm#Evolve_and_Result_Display"}}{\fldrslt \cf2 \ul \ulc2 Evolve and result display}}
+\f3\fs24 \cf0 \
+
+\f2\fs32 \cf3 \'ca\'ca\'ca {\field{\*\fldinst{HYPERLINK "file:///Users/shanjiangzhu/Documents/workspace/ADAM3.0/ADAM-helpfile.htm#Statistics"}}{\fldrslt \cf2 \ul \ulc2 Statistics}}
+\f3\fs24 \cf0 \
+\pard\pardeftab720\sl120\sa240
+{\field{\*\fldinst{HYPERLINK "file:///Users/shanjiangzhu/Documents/workspace/ADAM3.0/ADAM-Assignment.htm"}}{\fldrslt 
+\f2 \cf2 \ul \ulc2 Assignments for CE3201}}\
+\pard\pardeftab720\sa80
+
+\f0\b\fs42\fsmilli21333 \cf0 Introduction:
+\f1 \
+\pard\pardeftab720\sa240
+
+\f2\b0\fs32 \cf0 A simulation tool, the Agent-based Demand and Assignment Model (ADAM), is written as a java applet. The core algorithm is an agent-based model, which simulates travel patterns on a network based on microscopic decision-making by each traveler. The network performance is evaluated according to its macroscopic characteristics, including trip origins and destinations, traffic flow, and cost.
+\f3\fs24 \
+
+\f2\fs32 \'ca
+\f3\fs24 \
+
+\f2\fs32 You can access the program online at {\field{\*\fldinst{HYPERLINK "http://www.ce.umn.edu/~levinson/Adam/Dynamics.html"}}{\fldrslt \cf2 \ul \ulc2 http://www.ce.umn.edu/~levinson/Adam/Dynamics.html}}. You need a Java applet viewer (recommended) or IE 6.0, Firefox, or Safari browser with Java enabled to use this program. Each time you change the network, you should save a copy of the network. Follow the instructions to prevent unanticipated problem.
+\f3\fs24 \
+
+\f2\fs32 \'ca
+\f3\fs24 \
+
+\f2\fs32 This program is still a Beta version, please note any bugs and report them to the developer Shanjiang Zhu at {\field{\*\fldinst{HYPERLINK "mailto:zhuxx120@umn.edu"}}{\fldrslt \cf2 \ul \ulc2 zhuxx120@umn.edu}}.
+\f3\fs24 \
+\pard\pardeftab720\sa80
+
+\f0\b\fs42\fsmilli21333 \cf0 Model Details:
+\f1 \
+\pard\pardeftab720\sa240
+
+\f2\b0\fs32 \cf0 Agent-based model describes the decision making of individual traveler by setting interaction rules among different agents on the traffic network. ADAM defines three types of agents: nodes, links and travelers.
+\f3\fs24 \
+\pard\pardeftab720\sa240
+
+\f2 \cf0 Nodes represent traffic zones and intersection of links. Nodes provide information of network nearby with turning matrix and help travelers decide their destinations. Each line of the turning matrix represents the probability of travelers from node i to choose different destinations, which is decides both by the number of jobs at potential destination and travel time to this destination node.
+\f3 \
+\pard\pardeftab720\sa240
+
+\f4 \cf0 \pard\pardeftab720\sa240
+
+\f3 \cf0 \
+\pard\pardeftab720\sa240
+
+\f2 \cf0 Travelers will store the shortest path information from their origin to current node and exchange this information with current node once it arrives at a new node. Travelers will pool their shortest path knowledge at nodes, which can help travelers arriving later update their shortest path knowledge. If we have enough travelers on the network, the shortest path information will be spread very fast and permeate the network.
+\f3 \
+
+\f2 Once all travelers have found their destination, network will update their link travel time according to current link flows. Then all travelers will reenter the network and choose their travel route according to new link travel time. Model converges when this link travel time change is small enough. Then a link flow pattern emerged from individual route choice decisions. The following figure illustrates the mechanism of the ADAM.
+\f3 \
+\pard\pardeftab720\sa240
+
+\f4 \cf0 {{\NeXTGraphic ADAM-h50.gif \width9660 \height13780
+}¬}
+\f3 \
+\pard\pardeftab720\sa80
+
+\f0\b\fs37\fsmilli18667 \cf0 Instructions:
+\f5\i \
+\pard\pardeftab720\sa80
+
+\f0\i0\fs34\fsmilli17333 \cf0 1.
+\f2\b0\fs18\fsmilli9333 \'ca\'ca\'ca\'ca\'ca 
+\f0\b\fs34\fsmilli17333 Choose network
+\f1 \
+\pard\pardeftab720\sa240
+
+\f3\b0\fs32 \cf0 Choose one network listed in the choice menu or load your own network file saved on the local disk. The file to be loaded should either have been saved by the program or written as a predefined input file.\'ca
+\fs24 \
+\pard\pardeftab720\sa240
+
+\f4 \cf0 {{\NeXTGraphic ADAM-h1.gif \width3040 \height1980
+}¬}
+\f3 \
+\pard\pardeftab720\sa240
+
+\fs32 \cf0 The input file is in txt format where the first three numbers specify the number of Nodes, number of Workers and the beta (discussed in global parameters) for the network. The next sets of rows include information on each node and define the node id, the number of workers, number of jobs, x coordinate, y coordinate, and number of demand nodes, the demand node id and length to each demand node. The final sets of rows define the number of links and contain information for each link including the link id, origin node, destination node, number of lanes, capacity and free flow travel time for each link.
+\fs24 \
+\pard\pardeftab720\sa80
+
+\f0\b\fs34\fsmilli17333 \cf0 2.
+\f2\b0\fs18\fsmilli9333 \'ca\'ca\'ca\'ca\'ca 
+\f0\b\fs34\fsmilli17333 Map editing
+\f1 \
+\pard\pardeftab720\sa240
+
+\f3\b0\fs32 \cf0 Click the button \'d4\ul edit network\ulnone \'d5 to enable the editing option panel.\'ca After entering the map-editing mode, the button edit network will become red. You can choose a node or link by clicking them on the map. The links and nodes chosen will become red. After you choose a link or a node, you can either change the property or delete them by clicking the edit property button or the delete button.\'ca You can quit map-editing mode by clicking the button again, which resets the button to black.
+\fs24 \
+
+\f4 {{\NeXTGraphic ADAM-h2.gif \width4140 \height4520
+}¬}
+\f3\fs32 \'ca
+\fs24 \
+
+\fs32 Adding a Node: To add a node in the network, click on the add node button. After this button changes to cyan, you have entered the add node mode.\'ca Click wherever you want on the map to add a new node.\'ca A new node in cyan will indicate the location you chose. This node will not be added in the database unless you click on the edit property button to assign its properties. When this process is completed, the node will become black as other nodes. Click on the add node button again to quit the add node mode before entering any other mode.
+\fs24 \
+\pard\pardeftab720\sa240
+
+\f4 \cf0 {{\NeXTGraphic ADAM-h3.gif \width3060 \height3480
+}¬}
+\f3 \
+\pard\pardeftab720\sa240
+
+\fs32 \cf0 Adding a Link: An unconnected node (without any link attached) will cause problems to the program (just as it would cause problems to any residents living there).\'ca Click on the add link button after quitting the add node mode. When the add link button changes to cyan, click the starting node first, which will turn it to magenta, and then \ul holding the shift key\ulnone  click on the ending node.\'ca After both nodes become magenta, click the edit property button to complete the link adding process. A new link will appear on the map after appropriate values are assigned to each property.\'ca Click the add link button again to quit the add link mode.
+\fs24 \
+\pard\pardeftab720\sa240
+
+\f4 \cf0 {{\NeXTGraphic ADAM-h4.gif \width2960 \height2340
+}¬}
+\f3 \
+\pard\pardeftab720\sa240
+
+\fs32 \cf0 Editing an Existing Node or Link: To edit an existing node or link click on the \'d4edit network\'d5 button. Once the button becomes active (turns red), you can select the node or link you wish to edit and click on edit property.\'ca To exit this mode, click on the \'d4edit network\'d5 button again.\'ca When the button changes color back to black, you have exited the network editing mode.
+\fs24 \
+\pard\pardeftab720\sa240
+
+\f4 \cf0 {{\NeXTGraphic ADAM-h5.jpg \width27803 \height15768
+}¬}
+\f3 \
+\pard\pardeftab720\sa240
+
+\fs32 \cf0 Before you quit the map editing mode, make sure that all nodes and links have been correctly added and that you have quit the corresponding mode, which will return the add node and add link buttons to black and white. Click the edit network button again. When it becomes black and white, you have successfully quit the map-editing mode.
+\fs24 \
+\pard\pardeftab720\sa240
+
+\f4 \cf0 {{\NeXTGraphic ADAM-h6.gif \width3260 \height3860
+}¬}
+\f3 \'ca\'ca\'ca 
+\f4 {{\NeXTGraphic ADAM-h7.gif \width3260 \height3840
+}¬}
+\f3 \
+\pard\pardeftab720\sa80
+
+\f0\b\fs34\fsmilli17333 \cf0 3.
+\f2\b0\fs18\fsmilli9333 \'ca\'ca\'ca\'ca\'ca 
+\f0\b\fs34\fsmilli17333 Property inspection
+\f1 \
+\pard\pardeftab720\sa240
+
+\f3\b0\fs32 \cf0 To inspect the property of an existing node or link, right click on the link or node on screen. The pop up menu will list the current property of the link or node chosen. Besides the normal property listed in the edit property option panel, additional properties such as traffic production and attraction for nodes or actual travel time and traffic flow for links will also be listed if you right click on the chosen link or node after model evolving. Use this tool correctly will give you more straight-forward idea of performance of individual link or node, which is one record in a large table.
+\fs24 \
+\pard\pardeftab720\sa240
+
+\f4 \cf0 {{\NeXTGraphic ADAM-h11.gif \width5760 \height4420
+}¬}
+\f3 \
+\pard\pardeftab720\sa80
+
+\f0\b\fs34\fsmilli17333 \cf0 4.
+\f2\b0\fs18\fsmilli9333 \'ca\'ca\'ca\'ca\'ca 
+\f0\b\fs34\fsmilli17333 Set global variables
+\f1 \
+\pard\pardeftab720\sa240
+
+\f3\b0\fs32 \cf0 Use the scrollbars to set the global variables which determine the travel demand, attraction and travel behavior pattern.
+\fs24 \
+\pard\pardeftab720\sa240
+
+\f4 \cf0 {{\NeXTGraphic ADAM-h8.gif \width7520 \height6180
+}¬}\pard\pardeftab720\sa240
+
+\f6\b\fs32 \cf0 \'ca
+\f3\b0\fs24 \
+
+\f6\b\fs32 Trip production rate:
+\f3\b0  the ratio of the number of daily trips to the number of workers in a traffic analysis zone (TAZ).
+\fs24 \
+
+\f6\b\fs32 Trip attraction rate:
+\f3\b0  the ratio of the number of daily trips to the total number of jobs in the region.
+\fs24 \
+
+\f6\b\fs32 Travel length coefficient (
+\f7 s
+\f6 ):
+\f3\b0  the coefficient, which helps to determine the propensity to travel of each traveler. The small the coefficient is, the more likely a traveler will go further in order to find a job.
+\fs24 \
+
+\f6\b\fs32 Theta:
+\f3\b0  parameter for decision-making mechanism.
+\fs24 \
+\pard\pardeftab720\sa240
+
+\f4 \cf0 \pard\pardeftab720\sa240
+
+\f3 \cf0 \
+\pard\pardeftab720\sa240
+
+\f6\b\fs32 \cf0 \'ca
+\f3\b0\fs24 \
+
+\f6\b\fs32 Peak hour rate:
+\f3\b0  the proportion of daily trips occurring during the peak hour.
+\fs24 \
+
+\f6\b\fs32 Auto mode share:
+\f3\b0  the proportion of travelers using personal vehicles as travel mode.
+\fs24 \
+
+\f6\b\fs32 Auto occupancy:
+\f3\b0  number of travelers in each vehicle.
+\fs24 \
+
+\f6\b\fs32 Alpha for link performance function:
+\f3\b0  this parameter for the link performance function establishes the relationship between traffic flow and travel time on each link.
+\fs24 \
+
+\f6\b\fs32 Beta for link performance function:
+\f3\b0  exponential parameter in link performance function.
+\fs24 \
+\pard\pardeftab720\fi960\sa240
+
+\f8\i\fs32 \cf0 Link Performance Function:\'ca\'ca\'ca\'ca 
+\f3\i0 \'ca\'ca\'ca\'ca\'ca\'ca 
+\f4\fs24 
+\f3 \
+\pard\pardeftab720\sa240
+
+\f6\b\fs32 \cf0 \'ca
+\f3\b0\fs24 \
+
+\f6\b\fs32 Construction rate:
+\f3\b0  construction cost of highway, with the unit $/ (lane-Km).
+\fs24 \
+\pard\pardeftab720\sa80
+
+\f0\b\fs34\fsmilli17333 \cf0 5.
+\f2\b0\fs18\fsmilli9333 \'ca\'ca\'ca\'ca\'ca 
+\f0\b\fs34\fsmilli17333 Save network
+\f1 \
+\pard\pardeftab720\sa240
+
+\f3\b0\fs24 \cf0 Save your work by clicking on save network in the menu. \'caThe file saved on a local disk 
+\fs32 can be reloaded by clicking the load option in the network choice menu and choosing the corresponding file.
+\fs24 \
+\pard\pardeftab720\sa240
+
+\f4 \cf0 {{\NeXTGraphic ADAM-h9.gif \width2440 \height1880
+}¬}
+\f3\fs32 \'ca
+\fs24 \
+\pard\pardeftab720\sa80
+
+\f0\b\fs34\fsmilli17333 \cf0 6.
+\f2\b0\fs18\fsmilli9333 \'ca\'ca\'ca\'ca\'ca 
+\f0\b\fs34\fsmilli17333 Evolve and Result Display
+\f1 \
+\pard\pardeftab720\sa240
+
+\f3\b0\fs32 \cf0 Click on the \ul Evolve\ulnone  button in the legend to run the model.\'ca Once Evolve is clicked, travelers will determine their destination as well as travel route according to ADAM. The results will be illustrated on the map. \'caThe color of links represents the volume to capacity ratio on each link and the width represents the number of lanes, or capacity of each link.\'ca This should take less than a minute, but result times depend on your computer and the parameters you choose.
+\fs24 \
+\pard\pardeftab720\sa240
+
+\f4 \cf0 {{\NeXTGraphic ADAM-h10.gif \width12560 \height2200
+}¬}
+\f3 \
+\pard\pardeftab720\sa240
+
+\fs32 \cf0 The trace worker button enables you to show the trajectory of each traveler after you choose the starting node and ID of the traveler. You can remove it by clicking the remove trace worker button.
+\fs24 \
+
+\fs32 \'ca
+\fs24 \
+\pard\pardeftab720\sa80
+
+\f0\b\fs34\fsmilli17333 \cf0 7.
+\f2\b0\fs18\fsmilli9333 \'ca\'ca\'ca\'ca\'ca 
+\f0\b\fs34\fsmilli17333 Statistics
+\f1 \
+\pard\pardeftab720\sa240
+
+\f3\b0\fs32 \cf0 The statistics button enables you to summarize all important characteristics of the traffic network including all global variables, OD table and flow pattern on each link, as well as measures of effectiveness.
+\fs24 \
+
+\fs32 \'ca
+\fs24 \
+
+\fs32 You can save the statistics output by highlighting the text, pasting it in a notepad or word pad document and saving it as a \'d4.txt\'d5 text file.
+\fs24 \
+\pard\pardeftab720\sa80
+
+\f9\fs42\fsmilli21333 \cf0 \'a1\'a1\
+}
